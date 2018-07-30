@@ -1,3 +1,10 @@
+function format_time(i) {
+    if (i < 10) {
+        return "0" + i;
+    }
+    return i;
+}
+
 function count() {
     // 获取元素
     var day = $('#day');
@@ -17,11 +24,17 @@ function count() {
     minutes = date_now.getMinutes()
     seconds = date_now.getSeconds()
 
+    // 格式化时间
+    f_days = format_time(days)
+    f_hours = format_time(hours)
+    f_minutes = format_time(minutes)
+    f_seconds = format_time(seconds)
+
     // 设置时间
-    day.text(days)
-    hour.text(hours)
-    minute.text(minutes)
-    second.text(seconds)
+    day.text(f_days)
+    hour.text(f_hours)
+    minute.text(f_minutes)
+    second.text(f_seconds)
 }
 // 首次调用
 count()
