@@ -1,0 +1,38 @@
+body{
+    background: #F9EAD7
+}
+
+#container{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+#love_wrap{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform:    translate(-50%, -50%);
+    -ms-transform:     translate(-50%, -50%);
+    -o-transform:      translate(-50%, -50%);
+    width: 50%;
+}
+
+#love{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#love img{
+    width: 100%;
+    height: 100%;
+}
+
+#day, #hour, #minute, #second{
+    display: inline-block;
+    width: 2em;
+    font-size: 2em;
+    font-family: sans-serif;
+}
