@@ -18,7 +18,7 @@ function count() {
     // 下面的日期之所以要加1，是我和单单讨论的结果
     // 我们是2018年7月23日在一起的，我们认为那一天是第1天，而非第0天
     // 问题： https://单庄园.我爱你/images/question.png
-    // 答案： https://单庄园.我爱你/images/reply.png
+    // 回答： https://单庄园.我爱你/images/reply.png
     days = Math.floor((date_now.getTime() - date_begin.getTime()) / (24 * 3600 * 1000)) + 1;
     hours = date_now.getHours();
     minutes = date_now.getMinutes();
